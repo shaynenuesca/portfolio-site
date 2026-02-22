@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shayne Nuesca | Narrative Steward</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <div class="logo">Shayne Nuesca</div>
+
+    <div class="nav-right">
+      <nav id="main-nav">
+        <a href="#about">About</a>
+				<a href="#work">Work</a>
+        <a href="mailto:hello@shaynenuesca.com?subject=Inquiry%20about%20services">Contact</a>
+      </nav>
+
+      <button class="toggle" onclick="toggleMode()" aria-label="Toggle dark mode">
+        <svg class="icon sun" width="18" height="18" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+        </svg>
+        <svg class="icon moon" width="18" height="18" viewBox="0 0 24 24">
+          <path d="M21 13.6A8.5 8.5 0 0 1 10.4 3a7 7 0 1 0 10.6 10.6Z"></path>
+        </svg>
+      </button>
+
+      <button class="hamburger" id="hamburger" onclick="toggleNav()" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <div class="hero-inner">
+
+      <div class="hero-image">
+        <img src="profile.jpg" alt="Shayne Nuesca">
+      </div>
+
+      <div class="hero-text">
+        <h1>Hi, I'm Shayne.</h1>
+        <p>
+          I help people and organizations clarify their story and build narrative systems centered on uplifting culture and community.
+        </p>
+        <a class="cta" href="/cdn-cgi/l/email-protection#06756e677f686346647f6a6f61682865696b">Work with me →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 id="about">About</h2>
+
+    <div class="card">
+  
+      <p>Shayne Nuesca is a nationally recognized multimedia storyteller and narrative strategist working at the intersection of digital media, culture, preservation and social change. Born in San Fernando, La Union, Philippines and raised in Anchorage, Alaska, she draws on her experiences as a 1.5-generation Ilokana American to inform her practice, fostering spaces where people like her are seen, heard and valued. Her approach centers on themes of returning and reclamation, guiding people, brands and organizations to stay grounded in their values and principles in all aspects of their work.</p>
+
+    </div>
+
+  <section class="section">
+    <h2 id="work">Current Work</h2>
+
+    <div class="card">
+      <h3>Bylign</h3>
+      <p>Narrative studio focused on audience growth and editorial systems.</p>
+      <a href="https://bylign.com" target="_blank">Start your story →</a>
+    </div>
+
+    <div class="card">
+      <h3>Rooted</h3>
+      <p>Digital publication uplifting overlooked stories across media arts.</p>
+      <a href="https://wearerooted.xyz" target="_blank">See the stories →</a>
+    </div>
+    
+    <div class="card">
+      <h3>Kadua</h3>
+      <p>Social enterprise supporting Filipino American artists, makers and leaders.</p>
+      <a href="https://kadua.co" target="_blank">Explore the shop →</a>
+    </div>
+    
+    <div class="card">
+      <h3>Mana</h3>
+      <p>Media collective reclaiming Filipino American history in Alaska.</p>
+      <a href="https://wearerooted.xyz" target="_blank">Learn the history →</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="connect-grid">
+
+      
+      <div>
+  <h2 id="connect">Newsletter</h2>
+  <div class="newsletter-box">
+    <p class="muted-text">
+      Coming soon: Essays on media, diaspora and narrative strategy.
+    </p>
+    
+<form
+  action="https://buttondown.com/api/emails/embed-subscribe/shayne"
+  method="post"
+  class="newsletter-form"
+  onsubmit="handleSubscribe(event)"
+>
+  <label for="bd-email">Your email address</label>
+  <div class="input-row">
+    <input type="email" name="email" id="bd-email" placeholder="you@example.com" required>
+    <input type="hidden" value="1" name="embed">
+    <input type="submit" value="Subscribe" id="subscribe-btn">
+  </div>
+  <p id="subscribe-msg" class="buttondown-credit"></p>
+  <p class="buttondown-credit">
+    <a href="https://buttondown.com/refer/shayne" target="_blank">Powered by Buttondown.</a>
+  </p>
+</form>
+    
+    
+    
+  </div>
+</div>
+      
+      
+
+      <div>
+        <h2>Find Me Elsewhere</h2>
+        <div class="social-box">
+          <div class="social-links">
+            <p class="muted-text">Thanks for stopping by. I'll see you around.</p>
+            <a href="https://tiktok.com/@shaynenuesca" target="_blank">TikTok</a>
+            <a href="https://shayne.medium.com" target="_blank">Medium</a>
+            <a href="https://instagram.com/shaynenuesca" target="_blank">Instagram</a>
+            <a href="https://linkedin.com/in/shaynenuesca">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <p>&copy; 2026. Built with ♥ by Shayne Nuesca.</p>
+  </div>
+</footer>
+
+<script>
+  // Apply saved theme before paint to avoid flash
+  (function () {
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark");
+    }
+  })();
+
+  function toggleMode() {
+    document.body.classList.toggle("dark");
+    localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
+  }
+
+  function toggleNav() {
+    const nav = document.getElementById("main-nav");
+    const hamburger = document.getElementById("hamburger");
+    nav.classList.toggle("active");
+    hamburger.classList.toggle("open");
+  }
+
+  // Close nav when a link is clicked
+  document.querySelectorAll("#main-nav a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      document.getElementById("main-nav").classList.remove("active");
+      document.getElementById("hamburger").classList.remove("open");
+    });
+  });
+  
+  // Buttondown
+  function handleSubscribe(e) {
+    e.preventDefault();
+    const form = e.target;
+    const msg = document.getElementById('subscribe-msg');
+    const btn = document.getElementById('subscribe-btn');
+    fetch(form.action, {
+      method: 'POST',
+      body: new URLSearchParams(new FormData(form)),
+      mode: 'no-cors'
+    }).finally(function () {
+      if (msg) msg.textContent = "✓ Check your inbox to confirm!";
+      if (btn) { btn.value = "Subscribed!"; btn.disabled = true; }
+      document.getElementById('bd-email').disabled = true;
+    });
+  }
+</script>
+
+</body>
+</html>
