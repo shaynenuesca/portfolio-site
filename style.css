@@ -65,6 +65,8 @@ header.site-header {
 .logo {
   font-weight: 600;
   font-size: 1rem;
+   text-decoration: none;
+  color: var(--text);
 }
 
 /* Right side of header: nav + toggle + hamburger grouped together */
