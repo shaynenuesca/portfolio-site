@@ -232,6 +232,10 @@ body.dark .hero-image img {
   transition: opacity 0.2s ease;
 }
 
+.cta:hover {
+  opacity: 0.75;
+}
+
 /* SECTIONS */
 .section {
   padding: 1.5rem 0;
